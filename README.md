@@ -3,7 +3,7 @@
 
 Automatically loads your ghost file in Rayman Legends (for training room)
 
-By the way code is so easy i thought someone would made it before me but whatever
+By the way code is so easy i thought someone would make it before me but whatever
 
 > ### Instruction (en)
 **1.** Install Python 3.8 - https://www.python.org/downloads/release/python-380/
