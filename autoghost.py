@@ -1,14 +1,29 @@
 import os
 import time
+import shutil
 
-#you have to change paths everywhere (dont change anything after "saveghost\"
+# made by froggert (discord - kys#5888)
+# you have to change paths everywhere (dont change anything after "saveghost\"
 
-path = "D:\\RaymanLegends\gamesave\saveghost\challenge_run_main_sav.ghost" # here
-path2 = "D:\\RaymanLegends\gamesave\saveghost\challenge_run_main_sav_1.ghost" # here
+land = "D:\\RaymanLegends\gamesave\saveghost\challenge_run_main_sav.ghost" #
+pit = "D:\\RaymanLegends\gamesave\saveghost\spikyroad_main_sav.ghost"
+dojo = "D:\\RaymanLegends\gamesave\saveghost\shaolinplaza_main_sav.ghost"
+tower = "D:\\RaymanLegends\gamesave\saveghost\challenge_goingup_main_sav.ghost"
 while True:
-    time.sleep(5) # completes command every 5 seconds
-    if os.path.exists(path):
-        os.rename(r'D:\\RaymanLegends\gamesave\saveghost\challenge_run_main_sav.ghost', r'D:\\RaymanLegends\gamesave\saveghost\challenge_run_main_load.ghost') # if path to challenge_run_main_sav.ghost exists it renames it into challenge_run_main_load.ghost
-    if os.path.exists(path2):
-        os.remove(r'D:\\RaymanLegends\gamesave\saveghost\challenge_run_main_load.ghost')
-        os.rename(r'D:\\RaymanLegends\gamesave\saveghost\challenge_run_main_sav_1.ghost', r'D:\\RaymanLegends\gamesave\saveghost\challenge_run_main_load.ghost') # if path to challenge_run_main_sav_1.ghost exists it removes challenge_run_main_load.ghost and renames challenge_run_main_sav_1.ghost into challenge_run_main_load.ghost
+    time.sleep(3) # completes command every 3 seconds
+#land
+    if os.path.exists(land):
+        shutil.copyfile(r'D:\\RaymanLegends\gamesave\saveghost\challenge_run_main_sav.ghost', r'D:\\RaymanLegends\gamesave\saveghost\challenge_run_main_load.ghost')
+        os.remove(r'D:\\RaymanLegends\gamesave\saveghost\challenge_run_main_sav.ghost')
+#pit
+    if os.path.exists(pit):
+        shutil.copyfile(r'D:\\RaymanLegends\gamesave\saveghost\spikyroad_main_sav.ghost', r'D:\\RaymanLegends\gamesave\saveghost\spikyroad_main_load.ghost')
+        os.remove(r'D:\\RaymanLegends\gamesave\saveghost\spikyroad_main_sav.ghost')
+#dojo
+    if os.path.exists(dojo):
+        shutil.copyfile(r'D:\\RaymanLegends\gamesave\saveghost\shaolinplaza_main_sav.ghost', r'D:\\RaymanLegends\gamesave\saveghost\shaolinplaza_main_load.ghost')
+        os.remove(r'D:\\RaymanLegends\gamesave\saveghost\shaolinplaza_main_sav.ghost')
+#tower
+    if os.path.exists(tower):
+        shutil.copyfile(r'D:\\RaymanLegends\gamesave\saveghost\challenge_goingup_main_sav.ghost', r'D:\\RaymanLegends\gamesave\saveghost\challenge_goingup_main_load.ghost')
+        os.remove(r'D:\\RaymanLegends\gamesave\saveghost\challenge_goingup_main_sav.ghost')
