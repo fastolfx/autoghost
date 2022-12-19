@@ -13,7 +13,7 @@ Before using the script delete all .ghost files in RaymanLegends\gamesave\savegh
 
 **1.** Install Python 3.8 (python 2.7 also fine) - https://www.python.org/downloads/release/python-380/
 
-**2.** Edit all paths in autoghost.py
+**2.** Place autoghost.py in [your_path]\RaymanLegends\gamesave\saveghost
 
 **3.** Run autoghost.py and keep it running while playing
 > ### Instruction (ru)
@@ -22,6 +22,6 @@ Before using the script delete all .ghost files in RaymanLegends\gamesave\savegh
 
 **1.** Установите Python 3.8 (на питон 2.7 тоже работает) - https://www.python.org/downloads/release/python-380/
 
-**2.** Измените все пути в autoghost.py
+**2.** Поместите скрипт в [ваш_путь]\RaymanLegends\gamesave\saveghost
 
 **3.** Запустите autoghost.py и не закрывайте его во время игры
